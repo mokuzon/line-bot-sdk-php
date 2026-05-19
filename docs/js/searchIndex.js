@@ -231,6 +231,16 @@ Search.appendIndex(
             "summary": "Create\u0020http\u0020client\u0020option",
             "url": "classes/LINE-Clients-ChannelAccessToken-Api-ChannelAccessTokenApi.html#method_createHttpClientOption"
         },                {
+            "fqsen": "\\LINE\\Clients\\ChannelAccessToken\\Api\\ChannelAccessTokenApi\u003A\u003AhandleResponseWithDataType\u0028\u0029",
+            "name": "handleResponseWithDataType",
+            "summary": "",
+            "url": "classes/LINE-Clients-ChannelAccessToken-Api-ChannelAccessTokenApi.html#method_handleResponseWithDataType"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ChannelAccessToken\\Api\\ChannelAccessTokenApi\u003A\u003AresponseWithinRangeCode\u0028\u0029",
+            "name": "responseWithinRangeCode",
+            "summary": "",
+            "url": "classes/LINE-Clients-ChannelAccessToken-Api-ChannelAccessTokenApi.html#method_responseWithinRangeCode"
+        },                {
             "fqsen": "\\LINE\\Clients\\ChannelAccessToken\\Api\\ChannelAccessTokenApi\u003A\u003AissueStatelessChannelTokenByJWTAssertion\u0028\u0029",
             "name": "issueStatelessChannelTokenByJWTAssertion",
             "summary": "Issue\u0020a\u0020stateless\u0020channel\u0020access\u0020token\u0020by\u0020JWT\u0020assertion.",
@@ -343,7 +353,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\LINE\\Clients\\ChannelAccessToken\\Configuration",
             "name": "Configuration",
-            "summary": "Configuration\u0020Class\u0020Doc\u0020Comment\nPHP\u0020version\u00207.4",
+            "summary": "Configuration\u0020Class\u0020Doc\u0020Comment\nPHP\u0020version\u00208.1",
             "url": "classes/LINE-Clients-ChannelAccessToken-Configuration.html"
         },                {
             "fqsen": "\\LINE\\Clients\\ChannelAccessToken\\Configuration\u003A\u003A__construct\u0028\u0029",
@@ -461,6 +471,26 @@ Search.appendIndex(
             "summary": "Gets\u0020the\u0020temp\u0020folder\u0020path",
             "url": "classes/LINE-Clients-ChannelAccessToken-Configuration.html#method_getTempFolderPath"
         },                {
+            "fqsen": "\\LINE\\Clients\\ChannelAccessToken\\Configuration\u003A\u003AsetCertFile\u0028\u0029",
+            "name": "setCertFile",
+            "summary": "Sets\u0020the\u0020certificate\u0020file\u0020path,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-ChannelAccessToken-Configuration.html#method_setCertFile"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ChannelAccessToken\\Configuration\u003A\u003AgetCertFile\u0028\u0029",
+            "name": "getCertFile",
+            "summary": "Gets\u0020the\u0020certificate\u0020file\u0020path,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-ChannelAccessToken-Configuration.html#method_getCertFile"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ChannelAccessToken\\Configuration\u003A\u003AsetKeyFile\u0028\u0029",
+            "name": "setKeyFile",
+            "summary": "Sets\u0020the\u0020certificate\u0020key\u0020path,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-ChannelAccessToken-Configuration.html#method_setKeyFile"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ChannelAccessToken\\Configuration\u003A\u003AgetKeyFile\u0028\u0029",
+            "name": "getKeyFile",
+            "summary": "Gets\u0020the\u0020certificate\u0020key\u0020path,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-ChannelAccessToken-Configuration.html#method_getKeyFile"
+        },                {
             "fqsen": "\\LINE\\Clients\\ChannelAccessToken\\Configuration\u003A\u003AgetDefaultConfiguration\u0028\u0029",
             "name": "getDefaultConfiguration",
             "summary": "Gets\u0020the\u0020default\u0020configuration\u0020instance",
@@ -565,6 +595,56 @@ Search.appendIndex(
             "name": "tempFolderPath",
             "summary": "Debug\u0020file\u0020location\u0020\u0028log\u0020to\u0020STDOUT\u0020by\u0020default\u0029",
             "url": "classes/LINE-Clients-ChannelAccessToken-Configuration.html#property_tempFolderPath"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ChannelAccessToken\\Configuration\u003A\u003A\u0024certFile",
+            "name": "certFile",
+            "summary": "Path\u0020to\u0020a\u0020certificate\u0020file,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-ChannelAccessToken-Configuration.html#property_certFile"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ChannelAccessToken\\Configuration\u003A\u003A\u0024keyFile",
+            "name": "keyFile",
+            "summary": "Path\u0020to\u0020a\u0020key\u0020file,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-ChannelAccessToken-Configuration.html#property_keyFile"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ChannelAccessToken\\FormDataProcessor",
+            "name": "FormDataProcessor",
+            "summary": "FormDataProcessor\u0020Class\u0020Doc\u0020Comment",
+            "url": "classes/LINE-Clients-ChannelAccessToken-FormDataProcessor.html"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ChannelAccessToken\\FormDataProcessor\u003A\u003Aprepare\u0028\u0029",
+            "name": "prepare",
+            "summary": "Take\u0020value\u0020and\u0020turn\u0020it\u0020into\u0020an\u0020array\u0020suitable\u0020for\u0020inclusion\u0020in\nthe\u0020http\u0020body\u0020\u0028form\u0020parameter\u0029.\u0020If\u0020it\u0027s\u0020a\u0020string,\u0020pass\u0020through\u0020unchanged\nIf\u0020it\u0027s\u0020a\u0020datetime\u0020object,\u0020format\u0020it\u0020in\u0020ISO8601",
+            "url": "classes/LINE-Clients-ChannelAccessToken-FormDataProcessor.html#method_prepare"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ChannelAccessToken\\FormDataProcessor\u003A\u003Aflatten\u0028\u0029",
+            "name": "flatten",
+            "summary": "Flattens\u0020a\u0020multi\u002Dlevel\u0020array\u0020of\u0020data\u0020and\u0020generates\u0020a\u0020single\u002Dlevel\u0020array\ncompatible\u0020with\u0020formdata\u0020\u002D\u0020a\u0020single\u002Dlevel\u0020array\u0020where\u0020the\u0020keys\u0020use\u0020bracket\nnotation\u0020to\u0020signify\u0020nested\u0020data.",
+            "url": "classes/LINE-Clients-ChannelAccessToken-FormDataProcessor.html#method_flatten"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ChannelAccessToken\\FormDataProcessor\u003A\u003AmakeFormSafe\u0028\u0029",
+            "name": "makeFormSafe",
+            "summary": "formdata\u0020must\u0020be\u0020limited\u0020to\u0020scalars\u0020or\u0020arrays\u0020of\u0020scalar\u0020values,\nor\u0020a\u0020resource\u0020for\u0020a\u0020file\u0020upload.\u0020Here\u0020we\u0020iterate\u0020through\u0020all\u0020available\ndata\u0020and\u0020identify\u0020how\u0020to\u0020handle\u0020each\u0020scenario",
+            "url": "classes/LINE-Clients-ChannelAccessToken-FormDataProcessor.html#method_makeFormSafe"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ChannelAccessToken\\FormDataProcessor\u003A\u003AprocessModel\u0028\u0029",
+            "name": "processModel",
+            "summary": "We\u0020are\u0020able\u0020to\u0020handle\u0020nested\u0020ModelInterface.\u0020We\u0020do\u0020not\u0020simply\u0020call\njson_decode\u0028json_encode\u0028\u0029\u0029\u0020because\u0020any\u0020given\u0020model\u0020may\u0020have\u0020binary\u0020data\nor\u0020other\u0020data\u0020that\u0020cannot\u0020be\u0020serialized\u0020to\u0020a\u0020JSON\u0020string",
+            "url": "classes/LINE-Clients-ChannelAccessToken-FormDataProcessor.html#method_processModel"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ChannelAccessToken\\FormDataProcessor\u003A\u003AprocessFiles\u0028\u0029",
+            "name": "processFiles",
+            "summary": "Handle\u0020file\u0020data",
+            "url": "classes/LINE-Clients-ChannelAccessToken-FormDataProcessor.html#method_processFiles"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ChannelAccessToken\\FormDataProcessor\u003A\u003AtryFopen\u0028\u0029",
+            "name": "tryFopen",
+            "summary": "",
+            "url": "classes/LINE-Clients-ChannelAccessToken-FormDataProcessor.html#method_tryFopen"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ChannelAccessToken\\FormDataProcessor\u003A\u003A\u0024has_file",
+            "name": "has_file",
+            "summary": "Tags\u0020whether\u0020payload\u0020passed\u0020to\u0020\u003A\u003Aprepare\u0028\u0029\u0020contains\u0020one\u0020or\u0020more\nSplFileObject\u0020or\u0020stream\u0020values.",
+            "url": "classes/LINE-Clients-ChannelAccessToken-FormDataProcessor.html#property_has_file"
         },                {
             "fqsen": "\\LINE\\Clients\\ChannelAccessToken\\HeaderSelector",
             "name": "HeaderSelector",
@@ -1881,6 +1961,16 @@ Search.appendIndex(
             "summary": "Create\u0020http\u0020client\u0020option",
             "url": "classes/LINE-Clients-Insight-Api-InsightApi.html#method_createHttpClientOption"
         },                {
+            "fqsen": "\\LINE\\Clients\\Insight\\Api\\InsightApi\u003A\u003AhandleResponseWithDataType\u0028\u0029",
+            "name": "handleResponseWithDataType",
+            "summary": "",
+            "url": "classes/LINE-Clients-Insight-Api-InsightApi.html#method_handleResponseWithDataType"
+        },                {
+            "fqsen": "\\LINE\\Clients\\Insight\\Api\\InsightApi\u003A\u003AresponseWithinRangeCode\u0028\u0029",
+            "name": "responseWithinRangeCode",
+            "summary": "",
+            "url": "classes/LINE-Clients-Insight-Api-InsightApi.html#method_responseWithinRangeCode"
+        },                {
             "fqsen": "\\LINE\\Clients\\Insight\\Api\\InsightApi\u003A\u003AcontentTypes",
             "name": "contentTypes",
             "summary": "",
@@ -1953,7 +2043,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\LINE\\Clients\\Insight\\Configuration",
             "name": "Configuration",
-            "summary": "Configuration\u0020Class\u0020Doc\u0020Comment\nPHP\u0020version\u00207.4",
+            "summary": "Configuration\u0020Class\u0020Doc\u0020Comment\nPHP\u0020version\u00208.1",
             "url": "classes/LINE-Clients-Insight-Configuration.html"
         },                {
             "fqsen": "\\LINE\\Clients\\Insight\\Configuration\u003A\u003A__construct\u0028\u0029",
@@ -2071,6 +2161,26 @@ Search.appendIndex(
             "summary": "Gets\u0020the\u0020temp\u0020folder\u0020path",
             "url": "classes/LINE-Clients-Insight-Configuration.html#method_getTempFolderPath"
         },                {
+            "fqsen": "\\LINE\\Clients\\Insight\\Configuration\u003A\u003AsetCertFile\u0028\u0029",
+            "name": "setCertFile",
+            "summary": "Sets\u0020the\u0020certificate\u0020file\u0020path,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-Insight-Configuration.html#method_setCertFile"
+        },                {
+            "fqsen": "\\LINE\\Clients\\Insight\\Configuration\u003A\u003AgetCertFile\u0028\u0029",
+            "name": "getCertFile",
+            "summary": "Gets\u0020the\u0020certificate\u0020file\u0020path,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-Insight-Configuration.html#method_getCertFile"
+        },                {
+            "fqsen": "\\LINE\\Clients\\Insight\\Configuration\u003A\u003AsetKeyFile\u0028\u0029",
+            "name": "setKeyFile",
+            "summary": "Sets\u0020the\u0020certificate\u0020key\u0020path,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-Insight-Configuration.html#method_setKeyFile"
+        },                {
+            "fqsen": "\\LINE\\Clients\\Insight\\Configuration\u003A\u003AgetKeyFile\u0028\u0029",
+            "name": "getKeyFile",
+            "summary": "Gets\u0020the\u0020certificate\u0020key\u0020path,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-Insight-Configuration.html#method_getKeyFile"
+        },                {
             "fqsen": "\\LINE\\Clients\\Insight\\Configuration\u003A\u003AgetDefaultConfiguration\u0028\u0029",
             "name": "getDefaultConfiguration",
             "summary": "Gets\u0020the\u0020default\u0020configuration\u0020instance",
@@ -2175,6 +2285,56 @@ Search.appendIndex(
             "name": "tempFolderPath",
             "summary": "Debug\u0020file\u0020location\u0020\u0028log\u0020to\u0020STDOUT\u0020by\u0020default\u0029",
             "url": "classes/LINE-Clients-Insight-Configuration.html#property_tempFolderPath"
+        },                {
+            "fqsen": "\\LINE\\Clients\\Insight\\Configuration\u003A\u003A\u0024certFile",
+            "name": "certFile",
+            "summary": "Path\u0020to\u0020a\u0020certificate\u0020file,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-Insight-Configuration.html#property_certFile"
+        },                {
+            "fqsen": "\\LINE\\Clients\\Insight\\Configuration\u003A\u003A\u0024keyFile",
+            "name": "keyFile",
+            "summary": "Path\u0020to\u0020a\u0020key\u0020file,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-Insight-Configuration.html#property_keyFile"
+        },                {
+            "fqsen": "\\LINE\\Clients\\Insight\\FormDataProcessor",
+            "name": "FormDataProcessor",
+            "summary": "FormDataProcessor\u0020Class\u0020Doc\u0020Comment",
+            "url": "classes/LINE-Clients-Insight-FormDataProcessor.html"
+        },                {
+            "fqsen": "\\LINE\\Clients\\Insight\\FormDataProcessor\u003A\u003Aprepare\u0028\u0029",
+            "name": "prepare",
+            "summary": "Take\u0020value\u0020and\u0020turn\u0020it\u0020into\u0020an\u0020array\u0020suitable\u0020for\u0020inclusion\u0020in\nthe\u0020http\u0020body\u0020\u0028form\u0020parameter\u0029.\u0020If\u0020it\u0027s\u0020a\u0020string,\u0020pass\u0020through\u0020unchanged\nIf\u0020it\u0027s\u0020a\u0020datetime\u0020object,\u0020format\u0020it\u0020in\u0020ISO8601",
+            "url": "classes/LINE-Clients-Insight-FormDataProcessor.html#method_prepare"
+        },                {
+            "fqsen": "\\LINE\\Clients\\Insight\\FormDataProcessor\u003A\u003Aflatten\u0028\u0029",
+            "name": "flatten",
+            "summary": "Flattens\u0020a\u0020multi\u002Dlevel\u0020array\u0020of\u0020data\u0020and\u0020generates\u0020a\u0020single\u002Dlevel\u0020array\ncompatible\u0020with\u0020formdata\u0020\u002D\u0020a\u0020single\u002Dlevel\u0020array\u0020where\u0020the\u0020keys\u0020use\u0020bracket\nnotation\u0020to\u0020signify\u0020nested\u0020data.",
+            "url": "classes/LINE-Clients-Insight-FormDataProcessor.html#method_flatten"
+        },                {
+            "fqsen": "\\LINE\\Clients\\Insight\\FormDataProcessor\u003A\u003AmakeFormSafe\u0028\u0029",
+            "name": "makeFormSafe",
+            "summary": "formdata\u0020must\u0020be\u0020limited\u0020to\u0020scalars\u0020or\u0020arrays\u0020of\u0020scalar\u0020values,\nor\u0020a\u0020resource\u0020for\u0020a\u0020file\u0020upload.\u0020Here\u0020we\u0020iterate\u0020through\u0020all\u0020available\ndata\u0020and\u0020identify\u0020how\u0020to\u0020handle\u0020each\u0020scenario",
+            "url": "classes/LINE-Clients-Insight-FormDataProcessor.html#method_makeFormSafe"
+        },                {
+            "fqsen": "\\LINE\\Clients\\Insight\\FormDataProcessor\u003A\u003AprocessModel\u0028\u0029",
+            "name": "processModel",
+            "summary": "We\u0020are\u0020able\u0020to\u0020handle\u0020nested\u0020ModelInterface.\u0020We\u0020do\u0020not\u0020simply\u0020call\njson_decode\u0028json_encode\u0028\u0029\u0029\u0020because\u0020any\u0020given\u0020model\u0020may\u0020have\u0020binary\u0020data\nor\u0020other\u0020data\u0020that\u0020cannot\u0020be\u0020serialized\u0020to\u0020a\u0020JSON\u0020string",
+            "url": "classes/LINE-Clients-Insight-FormDataProcessor.html#method_processModel"
+        },                {
+            "fqsen": "\\LINE\\Clients\\Insight\\FormDataProcessor\u003A\u003AprocessFiles\u0028\u0029",
+            "name": "processFiles",
+            "summary": "Handle\u0020file\u0020data",
+            "url": "classes/LINE-Clients-Insight-FormDataProcessor.html#method_processFiles"
+        },                {
+            "fqsen": "\\LINE\\Clients\\Insight\\FormDataProcessor\u003A\u003AtryFopen\u0028\u0029",
+            "name": "tryFopen",
+            "summary": "",
+            "url": "classes/LINE-Clients-Insight-FormDataProcessor.html#method_tryFopen"
+        },                {
+            "fqsen": "\\LINE\\Clients\\Insight\\FormDataProcessor\u003A\u003A\u0024has_file",
+            "name": "has_file",
+            "summary": "Tags\u0020whether\u0020payload\u0020passed\u0020to\u0020\u003A\u003Aprepare\u0028\u0029\u0020contains\u0020one\u0020or\u0020more\nSplFileObject\u0020or\u0020stream\u0020values.",
+            "url": "classes/LINE-Clients-Insight-FormDataProcessor.html#property_has_file"
         },                {
             "fqsen": "\\LINE\\Clients\\Insight\\HeaderSelector",
             "name": "HeaderSelector",
@@ -5996,6 +6156,16 @@ Search.appendIndex(
             "summary": "Create\u0020http\u0020client\u0020option",
             "url": "classes/LINE-Clients-Liff-Api-LiffApi.html#method_createHttpClientOption"
         },                {
+            "fqsen": "\\LINE\\Clients\\Liff\\Api\\LiffApi\u003A\u003AhandleResponseWithDataType\u0028\u0029",
+            "name": "handleResponseWithDataType",
+            "summary": "",
+            "url": "classes/LINE-Clients-Liff-Api-LiffApi.html#method_handleResponseWithDataType"
+        },                {
+            "fqsen": "\\LINE\\Clients\\Liff\\Api\\LiffApi\u003A\u003AresponseWithinRangeCode\u0028\u0029",
+            "name": "responseWithinRangeCode",
+            "summary": "",
+            "url": "classes/LINE-Clients-Liff-Api-LiffApi.html#method_responseWithinRangeCode"
+        },                {
             "fqsen": "\\LINE\\Clients\\Liff\\Api\\LiffApi\u003A\u003AcontentTypes",
             "name": "contentTypes",
             "summary": "",
@@ -6068,7 +6238,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\LINE\\Clients\\Liff\\Configuration",
             "name": "Configuration",
-            "summary": "Configuration\u0020Class\u0020Doc\u0020Comment\nPHP\u0020version\u00207.4",
+            "summary": "Configuration\u0020Class\u0020Doc\u0020Comment\nPHP\u0020version\u00208.1",
             "url": "classes/LINE-Clients-Liff-Configuration.html"
         },                {
             "fqsen": "\\LINE\\Clients\\Liff\\Configuration\u003A\u003A__construct\u0028\u0029",
@@ -6186,6 +6356,26 @@ Search.appendIndex(
             "summary": "Gets\u0020the\u0020temp\u0020folder\u0020path",
             "url": "classes/LINE-Clients-Liff-Configuration.html#method_getTempFolderPath"
         },                {
+            "fqsen": "\\LINE\\Clients\\Liff\\Configuration\u003A\u003AsetCertFile\u0028\u0029",
+            "name": "setCertFile",
+            "summary": "Sets\u0020the\u0020certificate\u0020file\u0020path,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-Liff-Configuration.html#method_setCertFile"
+        },                {
+            "fqsen": "\\LINE\\Clients\\Liff\\Configuration\u003A\u003AgetCertFile\u0028\u0029",
+            "name": "getCertFile",
+            "summary": "Gets\u0020the\u0020certificate\u0020file\u0020path,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-Liff-Configuration.html#method_getCertFile"
+        },                {
+            "fqsen": "\\LINE\\Clients\\Liff\\Configuration\u003A\u003AsetKeyFile\u0028\u0029",
+            "name": "setKeyFile",
+            "summary": "Sets\u0020the\u0020certificate\u0020key\u0020path,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-Liff-Configuration.html#method_setKeyFile"
+        },                {
+            "fqsen": "\\LINE\\Clients\\Liff\\Configuration\u003A\u003AgetKeyFile\u0028\u0029",
+            "name": "getKeyFile",
+            "summary": "Gets\u0020the\u0020certificate\u0020key\u0020path,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-Liff-Configuration.html#method_getKeyFile"
+        },                {
             "fqsen": "\\LINE\\Clients\\Liff\\Configuration\u003A\u003AgetDefaultConfiguration\u0028\u0029",
             "name": "getDefaultConfiguration",
             "summary": "Gets\u0020the\u0020default\u0020configuration\u0020instance",
@@ -6290,6 +6480,56 @@ Search.appendIndex(
             "name": "tempFolderPath",
             "summary": "Debug\u0020file\u0020location\u0020\u0028log\u0020to\u0020STDOUT\u0020by\u0020default\u0029",
             "url": "classes/LINE-Clients-Liff-Configuration.html#property_tempFolderPath"
+        },                {
+            "fqsen": "\\LINE\\Clients\\Liff\\Configuration\u003A\u003A\u0024certFile",
+            "name": "certFile",
+            "summary": "Path\u0020to\u0020a\u0020certificate\u0020file,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-Liff-Configuration.html#property_certFile"
+        },                {
+            "fqsen": "\\LINE\\Clients\\Liff\\Configuration\u003A\u003A\u0024keyFile",
+            "name": "keyFile",
+            "summary": "Path\u0020to\u0020a\u0020key\u0020file,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-Liff-Configuration.html#property_keyFile"
+        },                {
+            "fqsen": "\\LINE\\Clients\\Liff\\FormDataProcessor",
+            "name": "FormDataProcessor",
+            "summary": "FormDataProcessor\u0020Class\u0020Doc\u0020Comment",
+            "url": "classes/LINE-Clients-Liff-FormDataProcessor.html"
+        },                {
+            "fqsen": "\\LINE\\Clients\\Liff\\FormDataProcessor\u003A\u003Aprepare\u0028\u0029",
+            "name": "prepare",
+            "summary": "Take\u0020value\u0020and\u0020turn\u0020it\u0020into\u0020an\u0020array\u0020suitable\u0020for\u0020inclusion\u0020in\nthe\u0020http\u0020body\u0020\u0028form\u0020parameter\u0029.\u0020If\u0020it\u0027s\u0020a\u0020string,\u0020pass\u0020through\u0020unchanged\nIf\u0020it\u0027s\u0020a\u0020datetime\u0020object,\u0020format\u0020it\u0020in\u0020ISO8601",
+            "url": "classes/LINE-Clients-Liff-FormDataProcessor.html#method_prepare"
+        },                {
+            "fqsen": "\\LINE\\Clients\\Liff\\FormDataProcessor\u003A\u003Aflatten\u0028\u0029",
+            "name": "flatten",
+            "summary": "Flattens\u0020a\u0020multi\u002Dlevel\u0020array\u0020of\u0020data\u0020and\u0020generates\u0020a\u0020single\u002Dlevel\u0020array\ncompatible\u0020with\u0020formdata\u0020\u002D\u0020a\u0020single\u002Dlevel\u0020array\u0020where\u0020the\u0020keys\u0020use\u0020bracket\nnotation\u0020to\u0020signify\u0020nested\u0020data.",
+            "url": "classes/LINE-Clients-Liff-FormDataProcessor.html#method_flatten"
+        },                {
+            "fqsen": "\\LINE\\Clients\\Liff\\FormDataProcessor\u003A\u003AmakeFormSafe\u0028\u0029",
+            "name": "makeFormSafe",
+            "summary": "formdata\u0020must\u0020be\u0020limited\u0020to\u0020scalars\u0020or\u0020arrays\u0020of\u0020scalar\u0020values,\nor\u0020a\u0020resource\u0020for\u0020a\u0020file\u0020upload.\u0020Here\u0020we\u0020iterate\u0020through\u0020all\u0020available\ndata\u0020and\u0020identify\u0020how\u0020to\u0020handle\u0020each\u0020scenario",
+            "url": "classes/LINE-Clients-Liff-FormDataProcessor.html#method_makeFormSafe"
+        },                {
+            "fqsen": "\\LINE\\Clients\\Liff\\FormDataProcessor\u003A\u003AprocessModel\u0028\u0029",
+            "name": "processModel",
+            "summary": "We\u0020are\u0020able\u0020to\u0020handle\u0020nested\u0020ModelInterface.\u0020We\u0020do\u0020not\u0020simply\u0020call\njson_decode\u0028json_encode\u0028\u0029\u0029\u0020because\u0020any\u0020given\u0020model\u0020may\u0020have\u0020binary\u0020data\nor\u0020other\u0020data\u0020that\u0020cannot\u0020be\u0020serialized\u0020to\u0020a\u0020JSON\u0020string",
+            "url": "classes/LINE-Clients-Liff-FormDataProcessor.html#method_processModel"
+        },                {
+            "fqsen": "\\LINE\\Clients\\Liff\\FormDataProcessor\u003A\u003AprocessFiles\u0028\u0029",
+            "name": "processFiles",
+            "summary": "Handle\u0020file\u0020data",
+            "url": "classes/LINE-Clients-Liff-FormDataProcessor.html#method_processFiles"
+        },                {
+            "fqsen": "\\LINE\\Clients\\Liff\\FormDataProcessor\u003A\u003AtryFopen\u0028\u0029",
+            "name": "tryFopen",
+            "summary": "",
+            "url": "classes/LINE-Clients-Liff-FormDataProcessor.html#method_tryFopen"
+        },                {
+            "fqsen": "\\LINE\\Clients\\Liff\\FormDataProcessor\u003A\u003A\u0024has_file",
+            "name": "has_file",
+            "summary": "Tags\u0020whether\u0020payload\u0020passed\u0020to\u0020\u003A\u003Aprepare\u0028\u0029\u0020contains\u0020one\u0020or\u0020more\nSplFileObject\u0020or\u0020stream\u0020values.",
+            "url": "classes/LINE-Clients-Liff-FormDataProcessor.html#property_has_file"
         },                {
             "fqsen": "\\LINE\\Clients\\Liff\\HeaderSelector",
             "name": "HeaderSelector",
@@ -8226,6 +8466,16 @@ Search.appendIndex(
             "summary": "Create\u0020http\u0020client\u0020option",
             "url": "classes/LINE-Clients-ManageAudience-Api-ManageAudienceApi.html#method_createHttpClientOption"
         },                {
+            "fqsen": "\\LINE\\Clients\\ManageAudience\\Api\\ManageAudienceApi\u003A\u003AhandleResponseWithDataType\u0028\u0029",
+            "name": "handleResponseWithDataType",
+            "summary": "",
+            "url": "classes/LINE-Clients-ManageAudience-Api-ManageAudienceApi.html#method_handleResponseWithDataType"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ManageAudience\\Api\\ManageAudienceApi\u003A\u003AresponseWithinRangeCode\u0028\u0029",
+            "name": "responseWithinRangeCode",
+            "summary": "",
+            "url": "classes/LINE-Clients-ManageAudience-Api-ManageAudienceApi.html#method_responseWithinRangeCode"
+        },                {
             "fqsen": "\\LINE\\Clients\\ManageAudience\\Api\\ManageAudienceApi\u003A\u003AcontentTypes",
             "name": "contentTypes",
             "summary": "",
@@ -8341,6 +8591,16 @@ Search.appendIndex(
             "summary": "Create\u0020http\u0020client\u0020option",
             "url": "classes/LINE-Clients-ManageAudience-Api-ManageAudienceBlobApi.html#method_createHttpClientOption"
         },                {
+            "fqsen": "\\LINE\\Clients\\ManageAudience\\Api\\ManageAudienceBlobApi\u003A\u003AhandleResponseWithDataType\u0028\u0029",
+            "name": "handleResponseWithDataType",
+            "summary": "",
+            "url": "classes/LINE-Clients-ManageAudience-Api-ManageAudienceBlobApi.html#method_handleResponseWithDataType"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ManageAudience\\Api\\ManageAudienceBlobApi\u003A\u003AresponseWithinRangeCode\u0028\u0029",
+            "name": "responseWithinRangeCode",
+            "summary": "",
+            "url": "classes/LINE-Clients-ManageAudience-Api-ManageAudienceBlobApi.html#method_responseWithinRangeCode"
+        },                {
             "fqsen": "\\LINE\\Clients\\ManageAudience\\Api\\ManageAudienceBlobApi\u003A\u003AcontentTypes",
             "name": "contentTypes",
             "summary": "",
@@ -8413,7 +8673,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\LINE\\Clients\\ManageAudience\\Configuration",
             "name": "Configuration",
-            "summary": "Configuration\u0020Class\u0020Doc\u0020Comment\nPHP\u0020version\u00207.4",
+            "summary": "Configuration\u0020Class\u0020Doc\u0020Comment\nPHP\u0020version\u00208.1",
             "url": "classes/LINE-Clients-ManageAudience-Configuration.html"
         },                {
             "fqsen": "\\LINE\\Clients\\ManageAudience\\Configuration\u003A\u003A__construct\u0028\u0029",
@@ -8531,6 +8791,26 @@ Search.appendIndex(
             "summary": "Gets\u0020the\u0020temp\u0020folder\u0020path",
             "url": "classes/LINE-Clients-ManageAudience-Configuration.html#method_getTempFolderPath"
         },                {
+            "fqsen": "\\LINE\\Clients\\ManageAudience\\Configuration\u003A\u003AsetCertFile\u0028\u0029",
+            "name": "setCertFile",
+            "summary": "Sets\u0020the\u0020certificate\u0020file\u0020path,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-ManageAudience-Configuration.html#method_setCertFile"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ManageAudience\\Configuration\u003A\u003AgetCertFile\u0028\u0029",
+            "name": "getCertFile",
+            "summary": "Gets\u0020the\u0020certificate\u0020file\u0020path,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-ManageAudience-Configuration.html#method_getCertFile"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ManageAudience\\Configuration\u003A\u003AsetKeyFile\u0028\u0029",
+            "name": "setKeyFile",
+            "summary": "Sets\u0020the\u0020certificate\u0020key\u0020path,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-ManageAudience-Configuration.html#method_setKeyFile"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ManageAudience\\Configuration\u003A\u003AgetKeyFile\u0028\u0029",
+            "name": "getKeyFile",
+            "summary": "Gets\u0020the\u0020certificate\u0020key\u0020path,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-ManageAudience-Configuration.html#method_getKeyFile"
+        },                {
             "fqsen": "\\LINE\\Clients\\ManageAudience\\Configuration\u003A\u003AgetDefaultConfiguration\u0028\u0029",
             "name": "getDefaultConfiguration",
             "summary": "Gets\u0020the\u0020default\u0020configuration\u0020instance",
@@ -8635,6 +8915,56 @@ Search.appendIndex(
             "name": "tempFolderPath",
             "summary": "Debug\u0020file\u0020location\u0020\u0028log\u0020to\u0020STDOUT\u0020by\u0020default\u0029",
             "url": "classes/LINE-Clients-ManageAudience-Configuration.html#property_tempFolderPath"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ManageAudience\\Configuration\u003A\u003A\u0024certFile",
+            "name": "certFile",
+            "summary": "Path\u0020to\u0020a\u0020certificate\u0020file,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-ManageAudience-Configuration.html#property_certFile"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ManageAudience\\Configuration\u003A\u003A\u0024keyFile",
+            "name": "keyFile",
+            "summary": "Path\u0020to\u0020a\u0020key\u0020file,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-ManageAudience-Configuration.html#property_keyFile"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ManageAudience\\FormDataProcessor",
+            "name": "FormDataProcessor",
+            "summary": "FormDataProcessor\u0020Class\u0020Doc\u0020Comment",
+            "url": "classes/LINE-Clients-ManageAudience-FormDataProcessor.html"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ManageAudience\\FormDataProcessor\u003A\u003Aprepare\u0028\u0029",
+            "name": "prepare",
+            "summary": "Take\u0020value\u0020and\u0020turn\u0020it\u0020into\u0020an\u0020array\u0020suitable\u0020for\u0020inclusion\u0020in\nthe\u0020http\u0020body\u0020\u0028form\u0020parameter\u0029.\u0020If\u0020it\u0027s\u0020a\u0020string,\u0020pass\u0020through\u0020unchanged\nIf\u0020it\u0027s\u0020a\u0020datetime\u0020object,\u0020format\u0020it\u0020in\u0020ISO8601",
+            "url": "classes/LINE-Clients-ManageAudience-FormDataProcessor.html#method_prepare"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ManageAudience\\FormDataProcessor\u003A\u003Aflatten\u0028\u0029",
+            "name": "flatten",
+            "summary": "Flattens\u0020a\u0020multi\u002Dlevel\u0020array\u0020of\u0020data\u0020and\u0020generates\u0020a\u0020single\u002Dlevel\u0020array\ncompatible\u0020with\u0020formdata\u0020\u002D\u0020a\u0020single\u002Dlevel\u0020array\u0020where\u0020the\u0020keys\u0020use\u0020bracket\nnotation\u0020to\u0020signify\u0020nested\u0020data.",
+            "url": "classes/LINE-Clients-ManageAudience-FormDataProcessor.html#method_flatten"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ManageAudience\\FormDataProcessor\u003A\u003AmakeFormSafe\u0028\u0029",
+            "name": "makeFormSafe",
+            "summary": "formdata\u0020must\u0020be\u0020limited\u0020to\u0020scalars\u0020or\u0020arrays\u0020of\u0020scalar\u0020values,\nor\u0020a\u0020resource\u0020for\u0020a\u0020file\u0020upload.\u0020Here\u0020we\u0020iterate\u0020through\u0020all\u0020available\ndata\u0020and\u0020identify\u0020how\u0020to\u0020handle\u0020each\u0020scenario",
+            "url": "classes/LINE-Clients-ManageAudience-FormDataProcessor.html#method_makeFormSafe"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ManageAudience\\FormDataProcessor\u003A\u003AprocessModel\u0028\u0029",
+            "name": "processModel",
+            "summary": "We\u0020are\u0020able\u0020to\u0020handle\u0020nested\u0020ModelInterface.\u0020We\u0020do\u0020not\u0020simply\u0020call\njson_decode\u0028json_encode\u0028\u0029\u0029\u0020because\u0020any\u0020given\u0020model\u0020may\u0020have\u0020binary\u0020data\nor\u0020other\u0020data\u0020that\u0020cannot\u0020be\u0020serialized\u0020to\u0020a\u0020JSON\u0020string",
+            "url": "classes/LINE-Clients-ManageAudience-FormDataProcessor.html#method_processModel"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ManageAudience\\FormDataProcessor\u003A\u003AprocessFiles\u0028\u0029",
+            "name": "processFiles",
+            "summary": "Handle\u0020file\u0020data",
+            "url": "classes/LINE-Clients-ManageAudience-FormDataProcessor.html#method_processFiles"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ManageAudience\\FormDataProcessor\u003A\u003AtryFopen\u0028\u0029",
+            "name": "tryFopen",
+            "summary": "",
+            "url": "classes/LINE-Clients-ManageAudience-FormDataProcessor.html#method_tryFopen"
+        },                {
+            "fqsen": "\\LINE\\Clients\\ManageAudience\\FormDataProcessor\u003A\u003A\u0024has_file",
+            "name": "has_file",
+            "summary": "Tags\u0020whether\u0020payload\u0020passed\u0020to\u0020\u003A\u003Aprepare\u0028\u0029\u0020contains\u0020one\u0020or\u0020more\nSplFileObject\u0020or\u0020stream\u0020values.",
+            "url": "classes/LINE-Clients-ManageAudience-FormDataProcessor.html#property_has_file"
         },                {
             "fqsen": "\\LINE\\Clients\\ManageAudience\\HeaderSelector",
             "name": "HeaderSelector",
@@ -14256,6 +14586,16 @@ Search.appendIndex(
             "summary": "Create\u0020http\u0020client\u0020option",
             "url": "classes/LINE-Clients-MessagingApi-Api-MessagingApiApi.html#method_createHttpClientOption"
         },                {
+            "fqsen": "\\LINE\\Clients\\MessagingApi\\Api\\MessagingApiApi\u003A\u003AhandleResponseWithDataType\u0028\u0029",
+            "name": "handleResponseWithDataType",
+            "summary": "",
+            "url": "classes/LINE-Clients-MessagingApi-Api-MessagingApiApi.html#method_handleResponseWithDataType"
+        },                {
+            "fqsen": "\\LINE\\Clients\\MessagingApi\\Api\\MessagingApiApi\u003A\u003AresponseWithinRangeCode\u0028\u0029",
+            "name": "responseWithinRangeCode",
+            "summary": "",
+            "url": "classes/LINE-Clients-MessagingApi-Api-MessagingApiApi.html#method_responseWithinRangeCode"
+        },                {
             "fqsen": "\\LINE\\Clients\\MessagingApi\\Api\\MessagingApiApi\u003A\u003AcontentTypes",
             "name": "contentTypes",
             "summary": "",
@@ -14461,6 +14801,16 @@ Search.appendIndex(
             "summary": "Create\u0020http\u0020client\u0020option",
             "url": "classes/LINE-Clients-MessagingApi-Api-MessagingApiBlobApi.html#method_createHttpClientOption"
         },                {
+            "fqsen": "\\LINE\\Clients\\MessagingApi\\Api\\MessagingApiBlobApi\u003A\u003AhandleResponseWithDataType\u0028\u0029",
+            "name": "handleResponseWithDataType",
+            "summary": "",
+            "url": "classes/LINE-Clients-MessagingApi-Api-MessagingApiBlobApi.html#method_handleResponseWithDataType"
+        },                {
+            "fqsen": "\\LINE\\Clients\\MessagingApi\\Api\\MessagingApiBlobApi\u003A\u003AresponseWithinRangeCode\u0028\u0029",
+            "name": "responseWithinRangeCode",
+            "summary": "",
+            "url": "classes/LINE-Clients-MessagingApi-Api-MessagingApiBlobApi.html#method_responseWithinRangeCode"
+        },                {
             "fqsen": "\\LINE\\Clients\\MessagingApi\\Api\\MessagingApiBlobApi\u003A\u003AcontentTypes",
             "name": "contentTypes",
             "summary": "",
@@ -14533,7 +14883,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\LINE\\Clients\\MessagingApi\\Configuration",
             "name": "Configuration",
-            "summary": "Configuration\u0020Class\u0020Doc\u0020Comment\nPHP\u0020version\u00207.4",
+            "summary": "Configuration\u0020Class\u0020Doc\u0020Comment\nPHP\u0020version\u00208.1",
             "url": "classes/LINE-Clients-MessagingApi-Configuration.html"
         },                {
             "fqsen": "\\LINE\\Clients\\MessagingApi\\Configuration\u003A\u003A__construct\u0028\u0029",
@@ -14651,6 +15001,26 @@ Search.appendIndex(
             "summary": "Gets\u0020the\u0020temp\u0020folder\u0020path",
             "url": "classes/LINE-Clients-MessagingApi-Configuration.html#method_getTempFolderPath"
         },                {
+            "fqsen": "\\LINE\\Clients\\MessagingApi\\Configuration\u003A\u003AsetCertFile\u0028\u0029",
+            "name": "setCertFile",
+            "summary": "Sets\u0020the\u0020certificate\u0020file\u0020path,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-MessagingApi-Configuration.html#method_setCertFile"
+        },                {
+            "fqsen": "\\LINE\\Clients\\MessagingApi\\Configuration\u003A\u003AgetCertFile\u0028\u0029",
+            "name": "getCertFile",
+            "summary": "Gets\u0020the\u0020certificate\u0020file\u0020path,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-MessagingApi-Configuration.html#method_getCertFile"
+        },                {
+            "fqsen": "\\LINE\\Clients\\MessagingApi\\Configuration\u003A\u003AsetKeyFile\u0028\u0029",
+            "name": "setKeyFile",
+            "summary": "Sets\u0020the\u0020certificate\u0020key\u0020path,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-MessagingApi-Configuration.html#method_setKeyFile"
+        },                {
+            "fqsen": "\\LINE\\Clients\\MessagingApi\\Configuration\u003A\u003AgetKeyFile\u0028\u0029",
+            "name": "getKeyFile",
+            "summary": "Gets\u0020the\u0020certificate\u0020key\u0020path,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-MessagingApi-Configuration.html#method_getKeyFile"
+        },                {
             "fqsen": "\\LINE\\Clients\\MessagingApi\\Configuration\u003A\u003AgetDefaultConfiguration\u0028\u0029",
             "name": "getDefaultConfiguration",
             "summary": "Gets\u0020the\u0020default\u0020configuration\u0020instance",
@@ -14755,6 +15125,56 @@ Search.appendIndex(
             "name": "tempFolderPath",
             "summary": "Debug\u0020file\u0020location\u0020\u0028log\u0020to\u0020STDOUT\u0020by\u0020default\u0029",
             "url": "classes/LINE-Clients-MessagingApi-Configuration.html#property_tempFolderPath"
+        },                {
+            "fqsen": "\\LINE\\Clients\\MessagingApi\\Configuration\u003A\u003A\u0024certFile",
+            "name": "certFile",
+            "summary": "Path\u0020to\u0020a\u0020certificate\u0020file,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-MessagingApi-Configuration.html#property_certFile"
+        },                {
+            "fqsen": "\\LINE\\Clients\\MessagingApi\\Configuration\u003A\u003A\u0024keyFile",
+            "name": "keyFile",
+            "summary": "Path\u0020to\u0020a\u0020key\u0020file,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Clients-MessagingApi-Configuration.html#property_keyFile"
+        },                {
+            "fqsen": "\\LINE\\Clients\\MessagingApi\\FormDataProcessor",
+            "name": "FormDataProcessor",
+            "summary": "FormDataProcessor\u0020Class\u0020Doc\u0020Comment",
+            "url": "classes/LINE-Clients-MessagingApi-FormDataProcessor.html"
+        },                {
+            "fqsen": "\\LINE\\Clients\\MessagingApi\\FormDataProcessor\u003A\u003Aprepare\u0028\u0029",
+            "name": "prepare",
+            "summary": "Take\u0020value\u0020and\u0020turn\u0020it\u0020into\u0020an\u0020array\u0020suitable\u0020for\u0020inclusion\u0020in\nthe\u0020http\u0020body\u0020\u0028form\u0020parameter\u0029.\u0020If\u0020it\u0027s\u0020a\u0020string,\u0020pass\u0020through\u0020unchanged\nIf\u0020it\u0027s\u0020a\u0020datetime\u0020object,\u0020format\u0020it\u0020in\u0020ISO8601",
+            "url": "classes/LINE-Clients-MessagingApi-FormDataProcessor.html#method_prepare"
+        },                {
+            "fqsen": "\\LINE\\Clients\\MessagingApi\\FormDataProcessor\u003A\u003Aflatten\u0028\u0029",
+            "name": "flatten",
+            "summary": "Flattens\u0020a\u0020multi\u002Dlevel\u0020array\u0020of\u0020data\u0020and\u0020generates\u0020a\u0020single\u002Dlevel\u0020array\ncompatible\u0020with\u0020formdata\u0020\u002D\u0020a\u0020single\u002Dlevel\u0020array\u0020where\u0020the\u0020keys\u0020use\u0020bracket\nnotation\u0020to\u0020signify\u0020nested\u0020data.",
+            "url": "classes/LINE-Clients-MessagingApi-FormDataProcessor.html#method_flatten"
+        },                {
+            "fqsen": "\\LINE\\Clients\\MessagingApi\\FormDataProcessor\u003A\u003AmakeFormSafe\u0028\u0029",
+            "name": "makeFormSafe",
+            "summary": "formdata\u0020must\u0020be\u0020limited\u0020to\u0020scalars\u0020or\u0020arrays\u0020of\u0020scalar\u0020values,\nor\u0020a\u0020resource\u0020for\u0020a\u0020file\u0020upload.\u0020Here\u0020we\u0020iterate\u0020through\u0020all\u0020available\ndata\u0020and\u0020identify\u0020how\u0020to\u0020handle\u0020each\u0020scenario",
+            "url": "classes/LINE-Clients-MessagingApi-FormDataProcessor.html#method_makeFormSafe"
+        },                {
+            "fqsen": "\\LINE\\Clients\\MessagingApi\\FormDataProcessor\u003A\u003AprocessModel\u0028\u0029",
+            "name": "processModel",
+            "summary": "We\u0020are\u0020able\u0020to\u0020handle\u0020nested\u0020ModelInterface.\u0020We\u0020do\u0020not\u0020simply\u0020call\njson_decode\u0028json_encode\u0028\u0029\u0029\u0020because\u0020any\u0020given\u0020model\u0020may\u0020have\u0020binary\u0020data\nor\u0020other\u0020data\u0020that\u0020cannot\u0020be\u0020serialized\u0020to\u0020a\u0020JSON\u0020string",
+            "url": "classes/LINE-Clients-MessagingApi-FormDataProcessor.html#method_processModel"
+        },                {
+            "fqsen": "\\LINE\\Clients\\MessagingApi\\FormDataProcessor\u003A\u003AprocessFiles\u0028\u0029",
+            "name": "processFiles",
+            "summary": "Handle\u0020file\u0020data",
+            "url": "classes/LINE-Clients-MessagingApi-FormDataProcessor.html#method_processFiles"
+        },                {
+            "fqsen": "\\LINE\\Clients\\MessagingApi\\FormDataProcessor\u003A\u003AtryFopen\u0028\u0029",
+            "name": "tryFopen",
+            "summary": "",
+            "url": "classes/LINE-Clients-MessagingApi-FormDataProcessor.html#method_tryFopen"
+        },                {
+            "fqsen": "\\LINE\\Clients\\MessagingApi\\FormDataProcessor\u003A\u003A\u0024has_file",
+            "name": "has_file",
+            "summary": "Tags\u0020whether\u0020payload\u0020passed\u0020to\u0020\u003A\u003Aprepare\u0028\u0029\u0020contains\u0020one\u0020or\u0020more\nSplFileObject\u0020or\u0020stream\u0020values.",
+            "url": "classes/LINE-Clients-MessagingApi-FormDataProcessor.html#property_has_file"
         },                {
             "fqsen": "\\LINE\\Clients\\MessagingApi\\HeaderSelector",
             "name": "HeaderSelector",
@@ -47281,6 +47701,16 @@ Search.appendIndex(
             "summary": "Create\u0020http\u0020client\u0020option",
             "url": "classes/LINE-Webhook-Api-DummyApi.html#method_createHttpClientOption"
         },                {
+            "fqsen": "\\LINE\\Webhook\\Api\\DummyApi\u003A\u003AhandleResponseWithDataType\u0028\u0029",
+            "name": "handleResponseWithDataType",
+            "summary": "",
+            "url": "classes/LINE-Webhook-Api-DummyApi.html#method_handleResponseWithDataType"
+        },                {
+            "fqsen": "\\LINE\\Webhook\\Api\\DummyApi\u003A\u003AresponseWithinRangeCode\u0028\u0029",
+            "name": "responseWithinRangeCode",
+            "summary": "",
+            "url": "classes/LINE-Webhook-Api-DummyApi.html#method_responseWithinRangeCode"
+        },                {
             "fqsen": "\\LINE\\Webhook\\Api\\DummyApi\u003A\u003AcontentTypes",
             "name": "contentTypes",
             "summary": "",
@@ -47353,7 +47783,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\LINE\\Webhook\\Configuration",
             "name": "Configuration",
-            "summary": "Configuration\u0020Class\u0020Doc\u0020Comment\nPHP\u0020version\u00207.4",
+            "summary": "Configuration\u0020Class\u0020Doc\u0020Comment\nPHP\u0020version\u00208.1",
             "url": "classes/LINE-Webhook-Configuration.html"
         },                {
             "fqsen": "\\LINE\\Webhook\\Configuration\u003A\u003A__construct\u0028\u0029",
@@ -47471,6 +47901,26 @@ Search.appendIndex(
             "summary": "Gets\u0020the\u0020temp\u0020folder\u0020path",
             "url": "classes/LINE-Webhook-Configuration.html#method_getTempFolderPath"
         },                {
+            "fqsen": "\\LINE\\Webhook\\Configuration\u003A\u003AsetCertFile\u0028\u0029",
+            "name": "setCertFile",
+            "summary": "Sets\u0020the\u0020certificate\u0020file\u0020path,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Webhook-Configuration.html#method_setCertFile"
+        },                {
+            "fqsen": "\\LINE\\Webhook\\Configuration\u003A\u003AgetCertFile\u0028\u0029",
+            "name": "getCertFile",
+            "summary": "Gets\u0020the\u0020certificate\u0020file\u0020path,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Webhook-Configuration.html#method_getCertFile"
+        },                {
+            "fqsen": "\\LINE\\Webhook\\Configuration\u003A\u003AsetKeyFile\u0028\u0029",
+            "name": "setKeyFile",
+            "summary": "Sets\u0020the\u0020certificate\u0020key\u0020path,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Webhook-Configuration.html#method_setKeyFile"
+        },                {
+            "fqsen": "\\LINE\\Webhook\\Configuration\u003A\u003AgetKeyFile\u0028\u0029",
+            "name": "getKeyFile",
+            "summary": "Gets\u0020the\u0020certificate\u0020key\u0020path,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Webhook-Configuration.html#method_getKeyFile"
+        },                {
             "fqsen": "\\LINE\\Webhook\\Configuration\u003A\u003AgetDefaultConfiguration\u0028\u0029",
             "name": "getDefaultConfiguration",
             "summary": "Gets\u0020the\u0020default\u0020configuration\u0020instance",
@@ -47575,6 +48025,56 @@ Search.appendIndex(
             "name": "tempFolderPath",
             "summary": "Debug\u0020file\u0020location\u0020\u0028log\u0020to\u0020STDOUT\u0020by\u0020default\u0029",
             "url": "classes/LINE-Webhook-Configuration.html#property_tempFolderPath"
+        },                {
+            "fqsen": "\\LINE\\Webhook\\Configuration\u003A\u003A\u0024certFile",
+            "name": "certFile",
+            "summary": "Path\u0020to\u0020a\u0020certificate\u0020file,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Webhook-Configuration.html#property_certFile"
+        },                {
+            "fqsen": "\\LINE\\Webhook\\Configuration\u003A\u003A\u0024keyFile",
+            "name": "keyFile",
+            "summary": "Path\u0020to\u0020a\u0020key\u0020file,\u0020for\u0020mTLS",
+            "url": "classes/LINE-Webhook-Configuration.html#property_keyFile"
+        },                {
+            "fqsen": "\\LINE\\Webhook\\FormDataProcessor",
+            "name": "FormDataProcessor",
+            "summary": "FormDataProcessor\u0020Class\u0020Doc\u0020Comment",
+            "url": "classes/LINE-Webhook-FormDataProcessor.html"
+        },                {
+            "fqsen": "\\LINE\\Webhook\\FormDataProcessor\u003A\u003Aprepare\u0028\u0029",
+            "name": "prepare",
+            "summary": "Take\u0020value\u0020and\u0020turn\u0020it\u0020into\u0020an\u0020array\u0020suitable\u0020for\u0020inclusion\u0020in\nthe\u0020http\u0020body\u0020\u0028form\u0020parameter\u0029.\u0020If\u0020it\u0027s\u0020a\u0020string,\u0020pass\u0020through\u0020unchanged\nIf\u0020it\u0027s\u0020a\u0020datetime\u0020object,\u0020format\u0020it\u0020in\u0020ISO8601",
+            "url": "classes/LINE-Webhook-FormDataProcessor.html#method_prepare"
+        },                {
+            "fqsen": "\\LINE\\Webhook\\FormDataProcessor\u003A\u003Aflatten\u0028\u0029",
+            "name": "flatten",
+            "summary": "Flattens\u0020a\u0020multi\u002Dlevel\u0020array\u0020of\u0020data\u0020and\u0020generates\u0020a\u0020single\u002Dlevel\u0020array\ncompatible\u0020with\u0020formdata\u0020\u002D\u0020a\u0020single\u002Dlevel\u0020array\u0020where\u0020the\u0020keys\u0020use\u0020bracket\nnotation\u0020to\u0020signify\u0020nested\u0020data.",
+            "url": "classes/LINE-Webhook-FormDataProcessor.html#method_flatten"
+        },                {
+            "fqsen": "\\LINE\\Webhook\\FormDataProcessor\u003A\u003AmakeFormSafe\u0028\u0029",
+            "name": "makeFormSafe",
+            "summary": "formdata\u0020must\u0020be\u0020limited\u0020to\u0020scalars\u0020or\u0020arrays\u0020of\u0020scalar\u0020values,\nor\u0020a\u0020resource\u0020for\u0020a\u0020file\u0020upload.\u0020Here\u0020we\u0020iterate\u0020through\u0020all\u0020available\ndata\u0020and\u0020identify\u0020how\u0020to\u0020handle\u0020each\u0020scenario",
+            "url": "classes/LINE-Webhook-FormDataProcessor.html#method_makeFormSafe"
+        },                {
+            "fqsen": "\\LINE\\Webhook\\FormDataProcessor\u003A\u003AprocessModel\u0028\u0029",
+            "name": "processModel",
+            "summary": "We\u0020are\u0020able\u0020to\u0020handle\u0020nested\u0020ModelInterface.\u0020We\u0020do\u0020not\u0020simply\u0020call\njson_decode\u0028json_encode\u0028\u0029\u0029\u0020because\u0020any\u0020given\u0020model\u0020may\u0020have\u0020binary\u0020data\nor\u0020other\u0020data\u0020that\u0020cannot\u0020be\u0020serialized\u0020to\u0020a\u0020JSON\u0020string",
+            "url": "classes/LINE-Webhook-FormDataProcessor.html#method_processModel"
+        },                {
+            "fqsen": "\\LINE\\Webhook\\FormDataProcessor\u003A\u003AprocessFiles\u0028\u0029",
+            "name": "processFiles",
+            "summary": "Handle\u0020file\u0020data",
+            "url": "classes/LINE-Webhook-FormDataProcessor.html#method_processFiles"
+        },                {
+            "fqsen": "\\LINE\\Webhook\\FormDataProcessor\u003A\u003AtryFopen\u0028\u0029",
+            "name": "tryFopen",
+            "summary": "",
+            "url": "classes/LINE-Webhook-FormDataProcessor.html#method_tryFopen"
+        },                {
+            "fqsen": "\\LINE\\Webhook\\FormDataProcessor\u003A\u003A\u0024has_file",
+            "name": "has_file",
+            "summary": "Tags\u0020whether\u0020payload\u0020passed\u0020to\u0020\u003A\u003Aprepare\u0028\u0029\u0020contains\u0020one\u0020or\u0020more\nSplFileObject\u0020or\u0020stream\u0020values.",
+            "url": "classes/LINE-Webhook-FormDataProcessor.html#property_has_file"
         },                {
             "fqsen": "\\LINE\\Webhook\\HeaderSelector",
             "name": "HeaderSelector",
